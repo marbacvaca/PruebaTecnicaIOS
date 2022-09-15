@@ -15,6 +15,7 @@
 		2854046428CF9F7400F695ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2854046328CF9F7400F695ED /* Assets.xcassets */; };
 		2854046728CF9F7400F695ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2854046528CF9F7400F695ED /* LaunchScreen.storyboard */; };
 		2854046F28CFA44C00F695ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2854046E28CFA44C00F695ED /* GoogleService-Info.plist */; };
+		28AE030B28D3A55200978DA3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE030A28D3A55200978DA3 /* StringExtensions.swift */; };
 		28F45F2628D012A50003BBAE /* SignUpModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F45F2528D012A50003BBAE /* SignUpModuleViewController.swift */; };
 		28F45F2828D12DA90003BBAE /* IncorporationModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F45F2728D12DA90003BBAE /* IncorporationModuleViewController.swift */; };
 		808FCB9B28D2DDB000EA115C /* IncorporationModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808FCB9A28D2DDB000EA115C /* IncorporationModuleFactory.swift */; };
@@ -54,6 +55,7 @@
 		2854046628CF9F7400F695ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2854046828CF9F7400F695ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2854046E28CFA44C00F695ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28AE030A28D3A55200978DA3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		28F45F2528D012A50003BBAE /* SignUpModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModuleViewController.swift; sourceTree = "<group>"; };
 		28F45F2728D12DA90003BBAE /* IncorporationModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorporationModuleViewController.swift; sourceTree = "<group>"; };
 		611D75407C6904330A48A176 /* Pods-PruebaTecnica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnica.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				808FCBA428D2E05400EA115C /* UIViewControllerExtension.swift */,
 				808FCBB628D2E8CB00EA115C /* UIColor+Extension.swift */,
+				28AE030A28D3A55200978DA3 /* StringExtensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				808FCBAD28D2E55800EA115C /* AuthModuleFactory.swift in Sources */,
 				2854045B28CF9F7200F695ED /* AppDelegate.swift in Sources */,
 				808FCBCD28D2F4F600EA115C /* LoaderView.swift in Sources */,
+				28AE030B28D3A55200978DA3 /* StringExtensions.swift in Sources */,
 				28F45F2628D012A50003BBAE /* SignUpModuleViewController.swift in Sources */,
 				2854045D28CF9F7200F695ED /* SceneDelegate.swift in Sources */,
 			);

@@ -12,6 +12,8 @@ import FirebaseAuth
 protocol SignUpModuleViewControllerProtocol: LoaderProtocol {
     var password: String { get }
     var email: String { get }
+    var nombre: String {get}
+    var apellido: String {get}
     
     func showError(error: Error)
 }
@@ -58,18 +60,32 @@ class SignUpModuleViewController: BaseViewController {
         emailTextField.placeholder = "Correo electrónico"
         passwordTextField.placeholder = "Contraseña"
         let myColor = UIColor.gray
+        nameTextField.layer.borderColor = myColor.cgColor
+        nameTextField.layer.borderWidth = 1.0
+        nameTextField.layer.cornerRadius = 4
+        lastNameTextField.layer.borderColor = myColor.cgColor
+        lastNameTextField.layer.borderWidth = 1.0
+        lastNameTextField.layer.cornerRadius = 4
         emailTextField.layer.borderColor = myColor.cgColor
         emailTextField.layer.borderWidth = 1.0
         emailTextField.layer.cornerRadius = 4
         passwordTextField.layer.borderColor = myColor.cgColor
         passwordTextField.layer.borderWidth = 1.0
         passwordTextField.layer.cornerRadius = 4
+        confirmPasswordTextField.layer.borderColor = myColor.cgColor
+        confirmPasswordTextField.layer.borderWidth = 1.0
+        confirmPasswordTextField.layer.cornerRadius = 4
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
 }
 
 extension SignUpModuleViewController: SignUpModuleViewControllerProtocol {
+    
+    var apellido: String {
+        return passwordTextField.text ?? ""
+    }
+    
     var password: String {
         return passwordTextField.text ?? ""
     }
@@ -78,9 +94,14 @@ extension SignUpModuleViewController: SignUpModuleViewControllerProtocol {
         return emailTextField.text ?? ""
     }
     
+    var nombre: String {
+        return nameTextField.text ?? ""
+    }
+    
     func showError(error: Error) {
         showAlert(with: error)
     }
+    
 }
 
 extension SignUpModuleViewController: UITextFieldDelegate {

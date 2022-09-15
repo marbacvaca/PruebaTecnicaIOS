@@ -30,11 +30,20 @@ extension SignUpModulePresenter: SignUpModulePresenterProtocol {
     func makeRegistration() {
         guard let email = view?.email,
               let password = view?.password,
-              !email.isEmpty, !password.isEmpty else { return }
+              let name = view?.nombre,
+                !email.isEmpty, !password.isEmpty,!name.isEmpty else {
+            view?.showError(error: AppErrors.unfilledFields)
+            return
+        }
         
-        view?.showLoader()
-        interactor.executeSignUp(email: email, password: password)
+        if password.isValidPassword() {
+            view?.showLoader()
+            interactor.executeSignUp(email: email, password: password)
+        } else {
+            view?.showError(error: AppErrors.passwordFormat)
+        }
     }
+    
     
     func showHome() {
         view?.removeLoader()
@@ -46,3 +55,4 @@ extension SignUpModulePresenter: SignUpModulePresenterProtocol {
         view?.showError(error: error)
     }
 }
+

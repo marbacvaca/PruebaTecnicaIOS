@@ -13,6 +13,8 @@ enum AppErrors: Error {
     case unknownError
     case passwordLengthError
     case duplicatedAccount
+    case unfilledFields
+    case passwordFormat
 
     static func checkErrorCode(_ errorCode: Int) -> AppErrors {
         switch errorCode {
@@ -44,6 +46,10 @@ extension AppErrors: LocalizedError {
             return "La contraseña debe tener mas de 6 caracteres"
         case .duplicatedAccount:
             return "Este mail ya esta en uso."
+        case .unfilledFields:
+            return "Alguno de los campos requeridos esta vacio"
+        case .passwordFormat:
+            return " La contraseña debe de contener al meno 6 caracteres una mayúscula y un número"
         }
     }
 }

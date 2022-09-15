@@ -41,7 +41,10 @@ extension AuthModulePresenter: AuthModulePresenterProtocol {
     func didTapLogin() {
         guard let email = view?.email,
               let password = view?.password,
-              !email.isEmpty, !password.isEmpty else { return }
+              !email.isEmpty, !password.isEmpty else {
+                  view?.showError(error: AppErrors.unfilledFields)
+                  return
+              }
         
         view?.showLoader()
         interactor.executeLogin(email: email, password: password)
