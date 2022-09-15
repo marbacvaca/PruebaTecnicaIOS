@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "59A65D1F-811A-449B-AD7E-1821DBE24464"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B790102-230D-4C23-87AD-4AE0048F4A53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaTecnica/Common/NavigationManager/NavigationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "setDisplayedController(controller:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B790102-230D-4C23-87AD-4AE0048F4A53 - da07dd0791b9576e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnica.NavigationManager.setDisplayedController(controller: __C.UIViewController) -&gt; ()"
+                  moduleName = "PruebaTecnica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/csamex/Documents/BambuMobile/PruebaTecnica/PruebaTecnica/Common/NavigationManager/NavigationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "3B790102-230D-4C23-87AD-4AE0048F4A53 - da07dd0791b9576e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnica.NavigationManager.setDisplayedController(controller: __C.UIViewController) -&gt; ()"
+                  moduleName = "PruebaTecnica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/csamex/Documents/BambuMobile/PruebaTecnica/PruebaTecnica/Common/NavigationManager/NavigationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "375">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
